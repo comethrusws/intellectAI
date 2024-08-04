@@ -19,7 +19,6 @@ export const navData = [
         title: "SIMRIK",
         links: [
             { name: "For Everyone", url: "/for-everyone" },
-            { name: "For Enterprises", url: "/for-enterprises" },
             { name: "SIMRIK login", url: "/simrik-login", external: true },
             { name: "Download", url: "/download" },
         ]
@@ -30,7 +29,6 @@ export const navData = [
             { name: "Platform overview", url: "/platform-overview" },
             { name: "Pricing", url: "/pricing" },
             { name: "Documentation", url: "/documentation" },
-            { name: "API login", url: "/api-login", external: true },
         ]
     },
     {
@@ -47,7 +45,6 @@ export const navData = [
         links: [
             { name: "Terms of use", url: "/terms-of-use" },
             { name: "Privacy policy", url: "/privacy-policy" },
-            { name: "Brand guidelines", url: "/brand-guidelines" },
             { name: "Other policies", url: "/other-policies" },
         ]
     }

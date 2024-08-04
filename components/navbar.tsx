@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-sm h-10 w-full flex items-center justify-between px-6 sticky top-0 bg-transparent backdrop-blur-md">
-      <div className="flex items-center z-10">
+    <nav className="text-sm h-10 w-full flex items-center justify-between px-11 md:px-17 sticky top-0 bg-transparent backdrop-blur-md z-40 ha">
+      <div className="flex items-center z-50">
         <Link href={"/"}>
         <img
-          className="h-6 w-6 md:h-8 md:w-8"
+          className="h-10 w-10 md:h-14 md:w-14 invert dark:invert-0"
           src="/logo.png" // replace with your logo path
           alt="Logo"
         />
@@ -26,7 +26,7 @@ const Navbar = () => {
           {isOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
         </button>
       </div>
-      <div className={`fixed inset-0 top-40 md:top-0 bg-transparent backdrop-blur-md  transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none top-10'} md:relative md:bg-transparent md:opacity-100 md:pointer-events-auto`}>
+      <div className={`fixed inset-0 top-40 md:top-0  transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none top-10'} md:relative md:bg-transparent md:opacity-100 md:pointer-events-auto`}>
         <div className="flex flex-col h-full justify-center items-center md:flex-row md:justify-center">
           <ul className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-8">
             <li><a href="/research" className="text-white text-2xl md:text-sm md:text-black dark:text-gray-300 hover:text-gray-400 md:hover:text-gray-800 dark:hover:text-gray-200">Research</a></li>
