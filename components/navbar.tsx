@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex items-center z-50">
         <Link href={"/"}>
         <img
-          className="h-10 w-10 md:h-14 md:w-14 invert dark:invert-0"
+          className="h-10 w-10 md:h-12 md:w-12 invert dark:invert-0 md:mt-1"
           src="/logo.png" // replace with your logo path
           alt="Logo"
         />
