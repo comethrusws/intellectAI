@@ -9,6 +9,7 @@ import { GoArrowUpRight } from "react-icons/go";
 export default function Footer(){
     return(
         <div className="md:px-24 lg:px-24">
+            
             <div id="Foot-Notes" className="text-xs container mx-auto px-8 md:px-4 mb-4 md:mb-8 py-10">
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">

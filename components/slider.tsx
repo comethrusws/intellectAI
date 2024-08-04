@@ -15,7 +15,7 @@ const placeholders = [
 
 export default function Slider(){
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 4000, stopOnInteraction: true })
   );
   const [placeholder, setPlaceholder] = useState(placeholders[0]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -100,7 +100,7 @@ export default function Slider(){
 
 
         <CarouselItem className="basis-1/3 md:basis-full pl-8 md:pl-4">
-        <div className="rounded-lg relative w-[50vw] h-[50vh] md:w-full md:h-[60vh] bg-[url('/slides/12.png')] bg-cover overflow-hidden">
+        <div className="rounded-lg relative w-[50vw] h-[50vh] md:w-full md:h-[60vh] bg-[url('/slides/9.png')] bg-cover overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
               <h1 className="text-2xl md:text-5xl font-normal mb-4 text-white">

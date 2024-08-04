@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function Try(){
     return(
-        <div className="flex items-center justify-center mb-20">
+        <div className="flex items-center justify-center mb-10 mt-10">
         <div className="bg-gray-900 text-white md:p-10 p-[20vw] rounded-lg shadow-lg text-center md:max-w-fit mx-auto max-w-min">
             <h2 className="text-xl md:text-2xl font-bold mb-4">Quick answers.<br />Improved Workflow. Unlimited Ideas.</h2>
             <a 
