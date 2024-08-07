@@ -9,7 +9,7 @@ export default function termsofUse() {
       document.title = newHeaderName;
   }, []);
   return (
-    <main className="flex flex-col items-center justify-between p-16 md:p-24">
+    <main className="flex flex-col items-center justify-between p-10 md:p-24">
       <small className="text-xs md:text-sm py-4 items-center">Updated: July 3, 2024</small>
       <h1 className="text-4xl md:text-5xl font-normal items-center mb-6">Terms of Use</h1>
 

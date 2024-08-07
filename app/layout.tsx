@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeContextProvider from "@/context/theme-context";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import CookiePolicy from "@/components/cookiePolicy";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <ThemeContextProvider>
           <Navbar/>
           {children}
+          <CookiePolicy/>
           <Footer/>
         </ThemeContextProvider>
         </body>
