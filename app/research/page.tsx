@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image"
 import { useEffect, useState } from "react";
 import { IoMdArrowForward } from "react-icons/io";
+import ResearchCarousel from "@/components/researchCarousel";
 
 export default function Home() {
     const [headerName, setHeaderName] = useState('intellectAI');
@@ -45,18 +46,29 @@ export default function Home() {
             <small className="text-sm mt-4 flex text-center">Hanna Liu, Researcher at intellectAI</small>
             </p>
 
-            <div className="flex items-center justify-center mb-5 mt-16">
-                <div className="bg-neutral-600 text-white md:p-20 p-[20vw] rounded-lg shadow-lg text-center md:max-w-fit mx-auto max-w-min">
+            <div id="focus-areas" className="mt-20 md:px-40 text-center">
+            <h1 className="text-2xl md:text-4xl font-normal items-center mb-6">Focus Areas</h1>
+            <p className="text-sm md:text-[16px] mt-2">We build our generative models using a technology called deep learning, <br />which leverages large amounts of data to train an AI system to perform a task.</p>
+            </div>
+
+            <div id="text" className="mt-20 md:px-40 text-center">
+            <h1 className="text-2xl md:text-[30px] font-normal items-center mb-6">Text</h1>
+            <p className="text-sm md:text-[16px] mt-2">Our text models are sophisticated language processing tools designed to generate,<br />classify, and summarize text with exceptional coherence and precision.</p>
+            <ResearchCarousel/>
+            </div>
+
+
+            <div id="bottom-card" className="flex items-center justify-center mb-3 mt-16 w-full">
+                <div className="bg-neutral-800 text-white p-5 md:p-20 rounded-lg shadow-lg text-center w-full max-w-screen-xl mx-auto">
                     <h2 className="text-xl md:text-2xl font-normal mb-4">Explore all research</h2>
                     <a 
-                        href="/resarch/index" 
+                        href="/research/index" 
                         className="inline-block md:text-xl text-xs bg-white text-black px-6 py-2 rounded-full font-normal shadow-md hover:bg-gray-200 transition duration-300 items-center"
                     >
-                        <span className=" align-middle">View research index</span>
+                        <span className="align-middle">View research index</span>
                     </a>
                 </div>
             </div>
-
         </main>
     );
 }

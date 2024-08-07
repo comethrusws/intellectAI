@@ -4,8 +4,8 @@ export const navData = [
     {
         title: "Our research",
         links: [
-            { name: "Overview", url: "/overview" },
-            { name: "Index", url: "/index" },
+            { name: "Overview", url: "/research" },
+            { name: "Index", url: "/research/index" },
         ]
     },
     {
