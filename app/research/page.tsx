@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useEffect } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import ResearchCarousel from "@/components/researchCarousel";
-import { carouselImage, carouselText } from "@/lib/data";
+import { carouselImage, carouselrsrch, carouselText } from "@/lib/data";
 
 export default function Home() {    
     useEffect(() => {
@@ -61,7 +61,7 @@ export default function Home() {
             <p className="text-sm md:text-[16px] mt-2">Our current AI research leverages a rich foundation <br /> of prior projects and advancements.</p>
             <Link href={"/research/index"}><button className="rounded-full dark:bg-white bg-black text-white dark:text-black text-sm p-3 hover:bg-neutral-500 mt-6">View research index</button>
             </Link>
-            <ResearchCarousel items={carouselText}/>
+            <ResearchCarousel items={carouselrsrch}/>
 
             </div>
 

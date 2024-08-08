@@ -12,8 +12,9 @@ export const navData = [
     {
         title: "Latest advancements",
         links: [
-            { name: "SAGE-2", url: "/research/index/sage-2" },
             { name: "GEM-1o", url: "/research/index/gem-1o" },
+            { name: "SAGE-2", url: "/research/index/sage-2" },
+            { name: "MUSE", url: "/research/index/muse" },
         ]
     },
     {
@@ -76,15 +77,43 @@ export const carouselText = [
 
   export const carouselImage = [
     {
-        title: "Aligning language models to follow instructions",
-        description: "We've trained language models that are much better at following user intentions than GEM-1o.",
-        image: "/research/res1.png",
-        link: "/research/index/inst-following"
+        title: "Layered Image Creation with MUSE",
+        description: "We show that MUSE's layered approach to image generation enriches visual complexity and enhances creative expression, all while preserving high standards of photorealism and textual alignment.",
+        image: "/research/image/im1.png",
+        link: "/research/index/layered-image-creation-w-nova-latents"
       },
       {
-        title: "Summarizing books with human feedback",
-        description: "We've trained a model to summarize entire books with human feedback.",
+        title: "MUSE: Text to Stunning Visuals",
+        description: "MUSE converts text into vivid, intricate imagery, capturing complex ideas with striking precision.",
         image: "/research/res2.png",
-        link: "/research/index/book-gists"
+        link: "/research/index/muse"
+      },
+      {
+        title: "NOVA: Bridging Multimodal Data",
+        description: "Introducing NOVA, a neural network that seamlessly integrates multimodal data, synthesizing high-quality images by understanding and combining diverse inputs.",
+        image: "/research/image/img3.png",
+        link: "/research/index/nova"
       },  
   ]
+
+  export const carouselrsrch = [
+    {
+      title: "Research : Jul 12, 2024",
+      description: "NOVA: Neural Optimal Visual Architecture",
+      image: "/research/index/index1.png",
+      link: "/research/index/nova"
+    },
+    {
+      title: "Research : Jun 12, 2023",
+      description: "Solving sudoku with SAGE-2",
+      image: "/research/index/index3.png",
+      link: "/research/index/solving-sudoku"
+    },
+    {
+      title: "Research : Mar 26, 2023",
+      description: "Low-Resource Transfors for Multimodel Architecture",
+      image: "/research/index/index2.png",
+      link: "/research/index/LRTMA"
+    }
+  ];
+  
