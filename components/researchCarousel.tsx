@@ -8,48 +8,54 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from 'next/link';
 
-const carouselItems = [
-  {
-    title: "Aligning language models to follow instructions",
-    description: "We've trained language models that are much better at following user intentions than GPT-3.",
-    image: "/research/res3.png",
-    bgColor: "/research/res3.png"
-  },
-  {
-    title: "Summarizing books with human feedback",
-    description: "We've trained a model to summarize entire books with human feedback.",
-    image: "/research/res1.png",
-    bgColor: "/research/res1.png"
-  },
-  {
-    title: "Language models are few-shot learners",
-    description: "We trained GPT-3, an autoregressive language model with 175 billion parameters.",
-    image: "/research/res2.png",
-    bgColor: "/research/res2.png"
-  }
-];
+interface CarouselItem {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
 
-const ResearchCarousel = () => {
+interface ResearchCarouselProps {
+  items: CarouselItem[];
+}
+
+const ResearchCarousel: React.FC<ResearchCarouselProps> = ({ items }) => {
   return (
-    <Carousel className="w-full mt-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
-      <CarouselContent>
-        {carouselItems.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card className={`${item.bgColor} h-full`}>
-                <CardContent className="flex flex-col items-center justify-center p-6 h-full">
-                  <h3 className="text-xs font-normal mb-2">{item.title}</h3>
-                  <p className="text-center">{item.description}</p>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious className="md:hidden ml-3" />
-      <CarouselNext className="md:hidden mr-3" />
-    </Carousel>
+    <div className="w-full max-w-[90vw] mx-auto px-4 py-8">
+      <Carousel className="w-full">
+        <CarouselContent className="-ml-4">
+          {items.map((item, index) => (
+            <CarouselItem key={index} className="pl-4 sm:basis-1/2 md:basis-1/3">
+              <div className="aspect-square md:aspect-[16/9] lg:aspect-[16/9]">
+                <Card className="outline-none relative h-full md:h-[70vh] md:w-[50vh] cursor-pointer">
+                  <CardContent className="p-0 h-full md:w-full">
+                    <Link href={item.link}>
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-lg md:hover:zoom-in-75 md:zoom-in-0"
+                      />
+                      <div className="absolute text-left inset-0 flex flex-col justify-end p-4 md:p-6 text-white bg-gradient-to-t from-black/50 to-transparent w-full">
+                        <h3 className="text-xs md:text-sm font-semibold mb-2">
+                          {item.title}
+                        </h3>
+                        <p className="text-xs md:text-base lg:text-base">{item.description}</p>
+                      </div>
+                    </Link>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 md:hidden" />
+        <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2 md:hidden" />
+      </Carousel>
+    </div>
   );
 };
 

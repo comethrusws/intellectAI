@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+
+            <div className="p-1">
+              <Card className={`${item.bgColor} h-full`}>
+                <CardContent className="flex flex-col items-center justify-center p-6 h-full">
+                  <h3 className="text-xs font-normal mb-2">{item.title}</h3>
+                  <p className="text-center">{item.description}</p>
+                </CardContent>
+              </Card>
+            </div>
+

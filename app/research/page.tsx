@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useEffect, useState } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import ResearchCarousel from "@/components/researchCarousel";
+import { carouselImage, carouselText } from "@/lib/data";
 
 export default function Home() {
     const [headerName, setHeaderName] = useState('intellectAI');
@@ -27,9 +28,9 @@ export default function Home() {
                 </Link>
                 <Link href={"/safety"}>
                     <button className="bg-transparent dark:text-white text-black text-sm p-3 hover:underline">
-                        <span className="flex items-center">
+                        <span className="flex items-center align-bottom">
                             Learn about safety
-                            <IoMdArrowForward className="ml-2" />
+                            <IoMdArrowForward className="ml-1" />
                         </span>
                     </button>
                 </Link>
@@ -37,7 +38,7 @@ export default function Home() {
 
             <div className="md:w-11/12 md:h-3/4 w-full h-auto md:p-10 mt-8">
                 <AspectRatio ratio={16 / 9}>
-                    <Image src="/research.png" alt="MUSE-i" layout="fill" objectFit="cover" className="w-full rounded-md object-cover"/>
+                    <Image src="/research2.png" alt="MUSE-i" layout="fill" objectFit="cover" className="w-full rounded-md object-cover"/>
                 </AspectRatio>
             </div>
 
@@ -54,7 +55,18 @@ export default function Home() {
             <div id="text" className="mt-20 md:px-40 text-center">
             <h1 className="text-2xl md:text-[30px] font-normal items-center mb-6">Text</h1>
             <p className="text-sm md:text-[16px] mt-2">Our text models are sophisticated language processing tools designed to generate,<br />classify, and summarize text with exceptional coherence and precision.</p>
-            <ResearchCarousel/>
+            <ResearchCarousel items={carouselText}/>
+
+            <h1 className="text-2xl md:text-[30px] font-normal items-center mb-6 mt-8 md:mt-12">Image</h1>
+            <p className="text-sm md:text-[16px] mt-2">Our research has led to MUSE (Multimodal Universal Synthesis Engine), <br /> a lightweight, highly accurate model for generating detailed and diverse visuals.</p>
+            <ResearchCarousel items={carouselImage}/>
+
+            <h1 className="text-2xl md:text-[30px] font-normal items-center mb-6 mt-8 md:mt-12">Key Research</h1>
+            <p className="text-sm md:text-[16px] mt-2">Our current AI research leverages a rich foundation <br /> of prior projects and advancements.</p>
+            <Link href={"/research/index"}><button className="rounded-full dark:bg-white bg-black text-white dark:text-black text-sm p-3 hover:bg-neutral-500 mt-6">View research index</button>
+            </Link>
+            <ResearchCarousel items={carouselText}/>
+
             </div>
 
 

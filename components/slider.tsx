@@ -45,7 +45,7 @@ export default function Slider(){
 
 
   return (
-    <Carousel orientation="horizontal" className="w-full" plugins={[plugin.current]} onMouseEnter={plugin.current.stop} onMouseLeave={plugin.current.reset} onMouseOut={plugin.current.reset}>
+    <Carousel orientation="horizontal" className="w-full md:max-w-full sm:max-w-xs" plugins={[plugin.current]} onMouseEnter={plugin.current.stop} onMouseLeave={plugin.current.reset} onMouseOut={plugin.current.reset}>
       <CarouselContent className="-ml-8 md:-ml-4">
         <CarouselItem className="basis-1/3 md:basis-full pl-8 md:pl-4">
         <div className="backdrop-blur-lg rounded-lg relative w-[50vw] h-[50vh]  md:w-full md:h-[60vh] bg-[url('/slides/5.png')] bg-cover overflow-hidden">
