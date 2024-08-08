@@ -1,13 +1,10 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 export default function termsofUse() {
-  const [headerName, setHeaderName] = useState('intellectAI');
-    
   useEffect(() => {
-      const newHeaderName = "Terms of use | intellectAI";
-      setHeaderName(newHeaderName);
-      document.title = newHeaderName;
+    document.title = ("Terms of Use | intellectAI")
   }, []);
+    
   return (
     <main className="flex flex-col items-center justify-between p-10 md:p-24">
       <small className="text-xs md:text-sm py-4 items-center">Updated: July 3, 2024</small>

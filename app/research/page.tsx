@@ -2,18 +2,14 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Link from "next/link";
 import Image from "next/image"
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import ResearchCarousel from "@/components/researchCarousel";
 import { carouselImage, carouselText } from "@/lib/data";
 
-export default function Home() {
-    const [headerName, setHeaderName] = useState('intellectAI');
-    
+export default function Home() {    
     useEffect(() => {
-        const newHeaderName = "Research | intellectAI";
-        setHeaderName(newHeaderName);
-        document.title = newHeaderName;
+        document.title = ("Research | intellectAI")
     }, []);
     
     return (
