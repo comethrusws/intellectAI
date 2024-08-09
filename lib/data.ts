@@ -78,7 +78,7 @@ export const carouselText = [
   export const carouselImage = [
     {
         title: "Layered Image Creation with MUSE",
-        description: "We show that MUSE's layered approach to image generation enriches visual complexity and enhances creative expression, all while preserving high standards of photorealism and textual alignment.",
+        description: "We show that MUSE's layered approach to image generation enriches visual complexity and enhances creative expression, all while preserving high standards of photorealism.",
         image: "/research/image/img2.png",
         link: "/research/index/layered-image-creation-w-nova-latents"
       },
