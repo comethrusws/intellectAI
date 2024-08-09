@@ -10,7 +10,7 @@ export default function termsofUse() {
       <small className="text-xs md:text-sm py-4 items-center">Updated: July 3, 2024</small>
       <h1 className="text-4xl md:text-5xl font-normal items-center mb-6">Terms of Use</h1>
 
-      <div className="text-left px-36 mt-8 text-[16px]">
+      <div className="text-left px-20 md:px-36 mt-8 text-[16px]">
         <small className="mt-7 text-[16px] text-left justify-start">
           <b>Effective</b> September 12, 2024 (previous version)
         </small>
