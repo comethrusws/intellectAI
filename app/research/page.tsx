@@ -1,4 +1,3 @@
-"use client";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Link from "next/link";
 import Image from "next/image"
@@ -6,12 +5,13 @@ import { useEffect } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import ResearchCarousel from "@/components/researchCarousel";
 import { carouselImage, carouselrsrch, carouselText } from "@/lib/data";
+import { Metadata } from "next";
 
-export default function Home() {    
-    useEffect(() => {
-        document.title = ("Research | intellectAI")
-    }, []);
-    
+export const metadata: Metadata ={
+    title: 'Research | intellectAI'
+}
+
+export default function Home() {        
     return (
         <main className="flex flex-col items-center justify-between p-10 md:p-24 md:overflow-hidden">
             <h1 className="text-4xl md:text-5xl font-normal items-center mb-6">Advancing Accessible and Safe AI</h1>

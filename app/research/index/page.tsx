@@ -1,11 +1,10 @@
-"use client";
-import { useEffect } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata ={
+    title: 'Research Index | intellectAI'
+}
 
 export default function Home() {    
-    useEffect(() => {
-        document.title=("Research Index | intellectAI")
-    }, []);
-    
     return (
         <main className="flex flex-col items-center justify-between p-10 md:p-24">
             <small className="text-xs md:text-sm mt-4 mb-1 items-center">Research Index</small>

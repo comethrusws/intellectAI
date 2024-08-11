@@ -1,10 +1,9 @@
-"use client"
-import { useEffect } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata={
+  title:'Terms of Use | intellectAI'
+}
 export default function termsofUse() {
-  useEffect(() => {
-    document.title = ("Terms of Use | intellectAI")
-  }, []);
-    
   return (
     <main className="flex flex-col items-center justify-between p-10 md:p-24">
       <small className="text-xs md:text-sm py-4 items-center">Updated: July 3, 2024</small>
