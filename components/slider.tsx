@@ -47,7 +47,7 @@ export default function Slider() {
     <Carousel orientation="horizontal" className="w-full" plugins={[plugin.current]} onMouseEnter={plugin.current.stop} onMouseLeave={plugin.current.isPlaying}>
       <CarouselContent className="ml-0">
         <CarouselItem className="basis-full p-4">
-          <div className="backdrop-blur-lg rounded-lg relative w-full h-[40vh] md:w-full md:h-[50vh] bg-[url('/slides/5.png')] bg-cover overflow-hidden">
+          <div className="backdrop-blur-lg aspect-square rounded-lg relative w-full h-[40vh] md:w-full md:h-[80vh] bg-[url('/slides/5.png')] bg-cover overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <h1 className="text-2xl md:text-5xl font-normal mb-4 text-white">
@@ -67,7 +67,7 @@ export default function Slider() {
         </CarouselItem>
 
         <CarouselItem className="basis-full p-4">
-          <div className="rounded-lg relative min-w-full h-[40vh] md:h-[50vh] md:w-full bg-neutral-900 bg-cover overflow-hidden">
+          <div className="rounded-lg aspect-square relative min-w-full h-[40vh] md:h-[80vh] md:w-full bg-neutral-900 bg-cover overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <h1 className="text-2xl md:text-5xl font-normal mb-4 text-white">
@@ -98,7 +98,7 @@ export default function Slider() {
         </CarouselItem>
 
         <CarouselItem className="basis-full p-4">
-          <div className="rounded-lg relative w-full h-[40vh] md:w-full md:h-[50vh] bg-[url('/slides/9.png')] bg-cover overflow-hidden">
+          <div className="rounded-lg relative aspect-square w-full h-[40vh] md:w-full md:h-[80vh] bg-[url('/slides/9.png')] bg-cover overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <h1 className="text-2xl md:text-5xl font-normal mb-4 text-white">

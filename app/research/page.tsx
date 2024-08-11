@@ -13,7 +13,7 @@ export default function Home() {
     }, []);
     
     return (
-        <main className="flex flex-col items-center justify-between p-10 md:p-24">
+        <main className="flex flex-col items-center justify-between p-10 md:p-24 md:overflow-hidden">
             <h1 className="text-4xl md:text-5xl font-normal items-center mb-6">Advancing Accessible and Safe AI</h1>
             <p className="text-sm md:text-xl md:px-40">
             We are dedicated to advancing artificial intelligence that is both safe and accessible. Our mission is to develop AI technologies that benefit everyone, ensuring innovation and ethical standards go hand in hand.
@@ -32,7 +32,7 @@ export default function Home() {
                 </Link>
             </div>
 
-            <div className="md:w-11/12 md:h-3/4 w-full h-auto md:p-10 mt-8">
+            <div className="md:w-11/12 md:h-3/4 w-full h-auto md:p-10 mt-8 md:overflow-hidden">
                 <AspectRatio ratio={16 / 9}>
                     <Image src="/research2.png" alt="MUSE-i" layout="fill" objectFit="cover" className="w-full rounded-md object-cover"/>
                 </AspectRatio>
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
 
 
-            <div id="bottom-card" className="flex items-center justify-center mb-3 mt-16 w-full">
+            <div id="bottom-card" className="flex items-center justify-center mb-3 mt-16 w-full md:overflow-hidden">
                 <div className="bg-neutral-800 text-white p-5 md:p-20 rounded-lg shadow-lg text-center w-full max-w-screen-xl mx-auto">
                     <h2 className="text-xl md:text-2xl font-normal mb-4">Explore all research</h2>
                     <a 

@@ -23,7 +23,7 @@ interface ResearchCarouselProps {
 
 const ResearchCarousel: React.FC<ResearchCarouselProps> = ({ items }) => {
   return (
-    <div className="w-full max-w-[90vw] mx-auto px-4 py-8">
+    <div className="w-full max-w-[90vw] mx-auto px-4 py-8 lg:overflow-hidden md:overflow-hidden">
       <Carousel className="w-full">
         <CarouselContent className="-ml-4">
           {items.map((item, index) => (
