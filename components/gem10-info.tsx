@@ -2,12 +2,14 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+type TabKey = 'creativity' | 'visual' | 'context';
+
 const GEM1oComponent = () => {
-    const [activeTab, setActiveTab] = useState("creativity");
+    const [activeTab, setActiveTab] = useState<TabKey>("creativity");
     const [displayedText, setDisplayedText] = useState("");
     const [isBlinking, setIsBlinking] = useState(true);
 
-    const tabContent = {
+    const tabContent: Record<TabKey, { input: string; output: string; description: string }> = {
         creativity: {
             input: "Explain the plot of Cinderella in a sentence where each word has to begin with the next letter in the alphabet from A to Z, without repeating any letters.",
             output: "A beautiful Cinderella, dwelling eagerly, finally gains happiness; inspiring jealous kin, love magically nurtures opulent prince; quietly rescues, slipper triumphs, uniting very wondrously, xenial youth zealously.",
@@ -27,21 +29,25 @@ const GEM1oComponent = () => {
 
     useEffect(() => {
         let text = tabContent[activeTab].output;
+        if (!text) return;  // safeguard against undefined text
         let index = 0;
-
+    
         setDisplayedText("");
+        setIsBlinking(true);
+    
         const interval = setInterval(() => {
             if (index < text.length) {
-                setDisplayedText((prev) => prev + text[index]);
+                setDisplayedText((prev) => prev + (text[index] || ""));
                 index++;
             } else {
+                setIsBlinking(false);
                 clearInterval(interval);
             }
         }, 50);
-
+    
         return () => clearInterval(interval);
     }, [activeTab]);
-
+    
     return (
         <div className="bg-transparent text-white px-8 rounded-lg w-full max-w-5xl mx-auto font-sans">
             <div className="flex md:flex-row justify-center md:space-x-8 mb-4 dark:text-gray-400 text-black">
