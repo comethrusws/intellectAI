@@ -3,6 +3,10 @@ import Link from "next/link";
 import Image from "next/image"
 import { Metadata } from 'next';
 import { GoArrowUpRight } from "react-icons/go";
+import GEM1oComponent from "@/components/gem10-info";
+import ColorfulTransition from "@/components/colorfulTransition";
+import { GoogleGeminiEffect } from "@/components/ui/google-gemini-effect";
+
 
 export const metadata: Metadata = {
   title: 'GEM-1o | intellectAI',
@@ -41,6 +45,11 @@ export default function Home() {
                 </AspectRatio>
                 <p className="text-xs text-gray-400 mt-1">Image Generated with MUSE</p>
             </div>
+
+            <GEM1oComponent/>
+
+            <ColorfulTransition/>
+
 
         </main>
         </>

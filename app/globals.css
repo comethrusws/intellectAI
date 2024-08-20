@@ -36,3 +36,30 @@ body {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 2s linear infinite;
+}

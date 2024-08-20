@@ -32,13 +32,20 @@ body {
   }
 }
 
+.zoom-in:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 
-            <div className="p-1">
-              <Card className={`${item.bgColor} h-full`}>
-                <CardContent className="flex flex-col items-center justify-center p-6 h-full">
-                  <h3 className="text-xs font-normal mb-2">{item.title}</h3>
-                  <p className="text-center">{item.description}</p>
-                </CardContent>
-              </Card>
-            </div>
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
 
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
