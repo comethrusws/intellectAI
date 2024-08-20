@@ -4,8 +4,8 @@ import Image from "next/image"
 import { Metadata } from 'next';
 import { GoArrowUpRight } from "react-icons/go";
 import GEM1oComponent from "@/components/gem10-info";
-import ColorfulTransition from "@/components/colorfulTransition";
-import { GoogleGeminiEffect } from "@/components/ui/google-gemini-effect";
+import ComparisonChart from "@/components/chart";
+import ShapeAnimation from "@/components/shapeAnimation";
 
 
 export const metadata: Metadata = {
@@ -47,10 +47,7 @@ export default function Home() {
             </div>
 
             <GEM1oComponent/>
-
-            <ColorfulTransition/>
-
-
+            <ComparisonChart/>
         </main>
         </>
     );

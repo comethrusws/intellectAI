@@ -26,29 +26,25 @@ const GEM1oComponent = () => {
     };
 
     useEffect(() => {
-        let words = tabContent[activeTab].output.split(" ");
+        let text = tabContent[activeTab].output;
         let index = 0;
 
-        // Clear the text and reset the blinking state
         setDisplayedText("");
-        setIsBlinking(true);
-
         const interval = setInterval(() => {
-            if (index < words.length) {
-                setDisplayedText((prev) => (prev ? `${prev} ${words[index]}` : words[index]));
+            if (index < text.length) {
+                setDisplayedText((prev) => prev + text[index]);
                 index++;
             } else {
                 clearInterval(interval);
-                setIsBlinking(false); // Stop blinking when text fully displayed
             }
-        }, 200);
+        }, 50);
 
         return () => clearInterval(interval);
     }, [activeTab]);
 
     return (
-        <div className="bg-transparent text-white p-8 rounded-lg w-full max-w-5xl mx-auto font-sans">
-            <div className="flex md:flex-row justify-center md:space-x-8 mb-8 dark:text-gray-400 text-black">
+        <div className="bg-transparent text-white px-8 rounded-lg w-full max-w-5xl mx-auto font-sans">
+            <div className="flex md:flex-row justify-center md:space-x-8 mb-4 dark:text-gray-400 text-black">
                 <button
                     className={`text-lg py-2 focus:outline-none transition-colors duration-300 ${
                         activeTab === "creativity" ? "text-green-500 border-b-2 border-green-500" : "text-gray-400"
@@ -99,7 +95,7 @@ const GEM1oComponent = () => {
                         transition={{ duration: 1 }}
                     >
                         <span className="ml-2">{displayedText}</span>
-                        {isBlinking && <span className="animate-blink">|</span>}
+                        <span className={`${isBlinking ? "animate-blink" : ""} ml-1`}>|</span>
                     </motion.div>
                 </div>
             </div>
