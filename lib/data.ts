@@ -20,8 +20,8 @@ export const navData = [
     {
         title: "SIMRIK",
         links: [
-            { name: "For Everyone", url: "/for-everyone" },
-            { name: "SIMRIK login", url: "/simrik-login", external: true },
+            { name: "Research", url: "/research/index/simrik" },
+            { name: "SIMRIK login", url: "https://simrik.vercel.app", external: true },
             { name: "Download", url: "/download" },
         ]
     },

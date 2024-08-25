@@ -31,7 +31,7 @@ const Navbar = () => {
           <ul className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-8">
             <li><a href="/research" className="text-white text-2xl md:text-sm md:text-black dark:text-gray-300 hover:text-gray-400 md:hover:text-gray-800 dark:hover:text-gray-200">Research</a></li>
             <li><a href="/products" className="text-white text-2xl md:text-sm md:text-black dark:text-gray-300 hover:text-gray-400 md:hover:text-gray-800 dark:hover:text-gray-200">Products</a></li>
-            <li><a href="/try-simrik" className="text-white text-2xl md:text-sm md:text-black dark:text-gray-300 hover:text-gray-400 md:hover:text-gray-800 dark:hover:text-gray-200">SIMRIK</a></li>
+            <li><a href="/research/index/simrik" className="text-white text-2xl md:text-sm md:text-black dark:text-gray-300 hover:text-gray-400 md:hover:text-gray-800 dark:hover:text-gray-200">SIMRIK</a></li>
             <li><a href="/company" className="text-white text-2xl md:text-sm md:text-black dark:text-gray-300 hover:text-gray-400 md:hover:text-gray-800 dark:hover:text-gray-200">Company</a></li>
           </ul>
         </div>

@@ -56,7 +56,7 @@ const ComparisonChart: React.FC = () => {
               strokeOpacity={0.9} 
               className="dark:stroke-white stroke-black"
             />
-            <XAxis dataKey="aspect" stroke="#ffffff" className="text-black md:text-sm text-xs" />
+            <XAxis dataKey="aspect" stroke="#ffffff" className="text-black md:text-sm text-[6px]" />
             <YAxis stroke="#ffffff" tick={false} /> {/* Remove labels */}
             <Tooltip 
               wrapperClassName="dark:bg-white bg-black" 

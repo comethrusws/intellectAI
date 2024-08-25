@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import ComparisonChart from "@/components/chart";
 import { motion } from "framer-motion";
 
 type TabKey = 'creativity' | 'visual' | 'context';
@@ -105,6 +106,8 @@ const GEM1oComponent = () => {
                     </motion.div>
                 </div>
             </div>
+
+            <ComparisonChart/>
         </div>
     );
 };
