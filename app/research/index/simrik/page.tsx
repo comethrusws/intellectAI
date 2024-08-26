@@ -39,14 +39,48 @@ export default function Home() {
                 </Link>
             </div>
 
-            <div className="md:w-11/12 md:h-1/2 w-full h-auto md:p-10 mt-8 md:overflow-hidden">
-                <AspectRatio ratio={16 / 9}>
-                    <Image src="/research/simrik/muse-3.png" alt="MUSE-i" layout="fill" objectFit="cover" className="w-full rounded-md object-cover"/>
-                </AspectRatio>
-                <p className="text-xs text-gray-400 mt-1">Image Generated with MUSE for SIMRIK</p>
-            </div>
+           
 
             <AnimatedCardGrid/>
+
+            <h1 className="text-2xl md:text-4xl font-normal items-center text-center mb-2 mt-24">
+            Creates, generates ideas, refines, <br />and investigates concepts with you.
+            
+            </h1>
+            <small className="text-xs md:text-sm py-4 items-center">
+            <span className="flex items-center align-bottom">
+                            Learm More About SIMRIK
+                            <GoArrowRight className="ml-1" />
+                        </span>
+            </small>
+            <div className="md:w-11/12 md:h-full w-full h-3/4 md:p-10 mt-full md:overflow-hidden mb-10">
+                <AspectRatio ratio={16 / 9}>
+                    <Image src="/research/simrik/creative-prompt.png" alt="Creative Content" layout="fill" objectFit="cover" className="w-full rounded-md object-cover"/>
+                </AspectRatio>
+            </div>
+
+            <h1 className="text-2xl md:text-4xl font-normal items-center text-center mb-4 md:mt-8 mt-10">
+            Generate and debug code. <br /> Automate repetitive tasks. Learn new APIs.
+            </h1>
+            <div className="md:w-11/12 md:h-full w-full h-3/4 md:p-10 mt-full md:overflow-hidden mb-10">
+                <AspectRatio ratio={16 / 9}>
+                    <Image src="/research/simrik/code-prompt.png" alt="Creative Content" layout="fill" objectFit="cover" className="w-full rounded-md object-cover"/>
+                </AspectRatio>
+            </div>
+
+            <h1 className="text-2xl md:text-4xl font-normal items-center text-center mb-4 md:mt-8 mt-10">
+            Solve Coding Problems. <br />Generate Programming Logic. Learn New frameworks. 
+            </h1>
+            <div className="md:w-11/12 md:h-full w-full h-3/4 md:p-10 mt-full md:overflow-hidden mb-10">
+                <AspectRatio ratio={16 / 9}>
+                    <Image src="/research/simrik/automation-prompt.png" alt="Creative Content" layout="fill" objectFit="cover" className="w-full rounded-md object-cover"/>
+                </AspectRatio>
+            </div>
+
+
+
+            
+
 
             <div id="bottom-card" className="flex items-center justify-center mb-3 mt-16 w-full md:overflow-hidden">
                 <div className="bg-blue-300/70 text-black dark:text-white p-5 md:p-20 rounded-lg shadow-lg text-center w-full max-w-[3/4vw] mx-auto">

@@ -12,15 +12,26 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+       
       },
       keyframes: {
         slide: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        moveLeft0: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        moveRight1: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
       },
       animation: {
         slide: 'slide 5s linear infinite',
+        'move-left-0': 'moveLeft0 20s linear infinite',
+        'move-right-1': 'moveRight1 20s linear infinite',
       },
     },
   },
