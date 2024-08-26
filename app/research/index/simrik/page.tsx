@@ -87,6 +87,7 @@ export default function Home() {
                     <h2 className="text-xl md:text-5xl font-normal mb-4">Join hundreds of  users <br /> and try SIMRIK today.</h2>
                     <a 
                         href="https://simrik.vercel.app" 
+                        target="_blank"
                         className="inline-block md:text-xl text-xs bg-white text-black px-6 py-2 rounded-full font-normal shadow-md hover:bg-gray-200 transition duration-100 items-center mt-2 hover:scale-[95%]"
                     >
                         <span className="flex items-center justify-center">
