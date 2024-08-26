@@ -21,7 +21,7 @@ export default function Home() {
             <small className="text-sm md:text-xl py-4 items-center">Free to use. Easy to try. Just ask and SIMRIK can <br />help with writing, learning, brainstorming, and more.</small>
 
             <div id="buttons" className="flex flex-col md:flex-row mt-10 justify-start">
-                <Link href={"https://simrik.vercel.app"}>
+                <Link href={"https://simrik.vercel.app"} target="_blank">
                     <button className="w-40 md:w-40 rounded-full dark:bg-white bg-black text-white dark:text-black text-sm p-3 hover:dark:bg-neutral-200 transition-transform">
                         <span className="flex items-center justify-center">
                             Try SIMRIK
